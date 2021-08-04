@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="48.499">
+    <testcase classname="As a valid user, I should be able to login" name="Client Center login verification" time="40.404">
+        <failure message="Title verification is failed!!! expected:&lt;[Client Center]&gt; but was:&lt;[Sign in to your account]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am on the website...................................................passed
+When I enter the correct credentials........................................passed
+Then I should be able to login successfully.................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: Title verification is failed!!! expected:<[Client Center]> but was:<[Sign in to your account]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at deliveryConfiguration_Tuseef.step_def.Login_StepDef.i_should_be_able_to_login_successfully(Login_StepDef.java:37)
+	at ✽.I should be able to login successfully(file:///C:/Users/Tuseef%20Mohammed/IdeaProjects/DeliveryConfiguration_Tuseef/src/test/resources/features/Login.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="My Reports" name="My Reports" time="7.562">
+        <failure message="expected:&lt;[Client Center]&gt; but was:&lt;[Sign in to your account]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am on the main web page.............................................failed
+When I click File Center module.............................................skipped
+Then I make sure that there is no "Myreports" module........................skipped
+Then I click the user icon..................................................skipped
+And I click the "Start Impersonating" link..................................skipped
+Then I add "bob backline" as a username in the field........................skipped
+And I click the "Start Impersonating" button................................skipped
+Then I click on the My Reports button.......................................skipped
+And I am in the Myreports module............................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Client Center]> but was:<[Sign in to your account]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at deliveryConfiguration_Tuseef.step_def.MyReports_StepDef.iAmOnTheMainWebPage(MyReports_StepDef.java:25)
+	at ✽.I am on the main web page(file:///C:/Users/Tuseef%20Mohammed/IdeaProjects/DeliveryConfiguration_Tuseef/src/test/resources/features/MyReports.feature:4)
+]]></failure>
+    </testcase>
+</testsuite>
